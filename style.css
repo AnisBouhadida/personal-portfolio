@@ -1,0 +1,157 @@
+/* General styling */
+
+body {
+    font-family: 'Dosis', sans-serif;
+    margin: 0;
+    background: #124559;
+    color: #FFFBFC;
+}
+
+/* Header styling */
+
+ul#lang-nav {
+    list-style: none;
+}
+
+ul#lang-nav li {
+    display: inline;
+}
+
+ul#lang-nav li a {
+    padding-left: 10px;
+    text-decoration: none;
+    color: #FFFBFC;
+}
+
+/* Welcome section styling */
+
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding: 100px 20vw;
+}
+
+section.splash-img img {
+    border-radius: 50%;
+    max-width: 350px;
+    max-height: 350px;
+    border: 2px #FFFBFC;
+}
+
+.blob-motion {
+    position: absolute;
+    transform: translateY(-25%);
+    z-index: -99;
+}
+
+p#welcome-text {
+    padding-top: 30px;
+    font-size: 4em;
+}
+
+img#down-arrow {
+    width: 50px;
+    height: 50px;
+}
+
+/* About me section styling */
+
+.blue {
+    background: #2685E3;
+}
+
+.blue-wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.blue-wave svg {
+    position: relative;
+    display: block;
+    width: calc(160% + 1.3px);
+    height: 177px;
+}
+
+.blue-wave .shape-fill {
+    fill: #124559;
+}
+
+/* Skills section styling */
+
+.green {
+    background: #00CECB;
+}
+
+.green-wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.green-wave svg {
+    position: relative;
+    display: block;
+    width: calc(110% + 1.3px);
+    height: 181px;
+}
+
+.green-wave .shape-fill {
+    fill: #2685E3;
+}
+
+/* Work experience section styling */
+
+.red {
+    background: #EF798A;
+}
+
+.red-wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.red-wave svg {
+    position: relative;
+    display: block;
+    width: calc(183% + 1.3px);
+    height: 215px;
+}
+
+.red-wave .shape-fill {
+    fill: #00CECB;
+}
+
+.bottom-red-wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.bottom-red-wave svg {
+    position: relative;
+    display: block;
+    width: calc(183% + 1.3px);
+    height: 215px;
+}
+
+.bottom-red-wave .shape-fill {
+    fill: #124559;
+}
