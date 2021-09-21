@@ -7,6 +7,14 @@ body {
     color: #FFFBFC;
 }
 
+.section-title{
+    font-size: 4em;
+}
+
+.section-text{
+
+}
+
 /* Header styling */
 
 ul#lang-nav {
@@ -82,6 +90,13 @@ img#down-arrow {
 .blue-wave .shape-fill {
     fill: #124559;
 }
+
+p#aboutme-text{
+    text-align: justify;
+    text-justify: newspaper;
+    
+}
+
 
 /* Skills section styling */
 
