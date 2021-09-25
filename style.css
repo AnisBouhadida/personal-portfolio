@@ -7,13 +7,11 @@ body {
     color: #FFFBFC;
 }
 
-.section-title{
+.section-title {
     font-size: 4em;
 }
 
-.section-text{
-
-}
+.section-text {}
 
 /* Header styling */
 
@@ -91,12 +89,10 @@ img#down-arrow {
     fill: #124559;
 }
 
-p#aboutme-text{
+p#aboutme-text {
     text-align: justify;
     text-justify: newspaper;
-    
 }
-
 
 /* Skills section styling */
 
@@ -169,4 +165,61 @@ p#aboutme-text{
 
 .bottom-red-wave .shape-fill {
     fill: #124559;
+}
+
+/* Contact section styling */
+
+.formContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+    width: 20vw;
+}
+
+input, textarea {
+    margin-bottom: 5vh;
+    width: 100%;
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    background-color: transparent;
+    outline: none;
+    color: #FFFBFC;
+    caret-color: #FFFBFC;
+}
+
+input[type=text]::placeholder, textarea::placeholder {
+    text-align: center;
+    color: #FFFBFC;
+}
+
+input[type=submit] {
+    background: #185C77;
+    width: 100%;
+    padding: 2vh;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px 4px;
+}
+
+.form-wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.form-wave svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 192px;
+}
+
+.form-wave .shape-fill {
+    fill: #EF798A;
 }

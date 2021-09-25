@@ -18,10 +18,11 @@
     <header>
         <ul id="lang-nav">
             <li><a href="#">عربي</a></li>
-            <li><a href="#">FR</a></li>
-            <li><a href="#">EN</a></li>
+            <li><a href="#" hreflang="fr">FR</a></li>
+            <li><a href="#" hreflang="en">EN</a></li>
         </ul>
     </header>
+
     <section class="splash-img">
         <img src="assets/pics/me.jpg" alt="a picture of me">
         <svg class="blob-motion" id="visual" viewBox="0 0 500 500" width="960" height="600"
@@ -42,8 +43,9 @@
     </section>
     <section id="blue" class="blue">
         <h1 class="section-title">About me</h1>
-        <p class="section-text" id="aboutme-text">Software engineer graduated from a Master in Public Health specialized in
-            Biomedical Informatics, I work mainly on web technologies within health information systems. I have a first
+        <p class="section-text" id="aboutme-text">Software engineer graduated from a Master in Public Health specialized
+            in Biomedical Informatics, I work mainly on web technologies within health information systems. I have a
+            first
             experience in the development of Serious Games on a web platform as well as an experience in the development
             of a batch solution for the processing of health data within a shared information system.
         </p>
@@ -123,7 +125,29 @@
                     class="shape-fill"></path>
             </svg>
         </div>
-        <div class="bottom-red-wave">
+    </section>
+    <section>
+        <h1 class="section-title">Contact me</h1>
+        <div class="form-container">
+            <form action="">
+
+                <input type="text" name="name" id="name" placeholder="Name" onfocus="this.placeholder=''"
+                    onblur="this.placeholder='Name'">
+
+                <input type="text" name="mail" id="mail" placeholder="Email" onfocus="this.placeholder=''"
+                    onblur="this.placeholder='Email'">
+
+                <input type="text" name="title" id="title" placeholder="Object" onfocus="this.placeholder=''"
+                    onblur="this.placeholder='Object'">
+
+                <textarea type="text" name="message" id="message" placeholder="Message" onfocus="this.placeholder=''"
+                    onblur="this.placeholder='Message'"></textarea>
+                <br>
+                <input type="submit" value="Send">
+            </form>
+        </div>
+
+        <div class="form-wave">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                 preserveAspectRatio="none">
                 <path
@@ -138,25 +162,11 @@
             </svg>
         </div>
     </section>
-    <section>
-        <h1 class="section-title">Contact me</h1>
-        <form action="">
-            <ul>
-                <li>
-                    <p>Name</p>
-                    <input type="text" name="name" id="name">
-                </li>
-                <li>
-                    <p>Object</p>
-                    <input type="text" name="title" id="title">
-                </li>
-                <li>
-                    <p>Message</p>
-                    <textarea type="text" name="message" id="message"></textarea>
-                </li>
-            </ul>
-        </form>
-    </section>
+
+    <footer>
+        <p>Anis Bouhadida</p>
+        <p>2021</p>
+    </footer>
 
 </body>
 <script src="main.js"></script>
