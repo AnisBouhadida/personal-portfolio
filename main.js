@@ -10,7 +10,7 @@ tween.start()
 
 // Add smooth scrolling
 $(document).ready(function () {
-  $("a#toAboutMe").on('click', function (event) {
+  $("#toAboutMe").on('click', function (event) {
 
     if (this.hash !== "") {
 
