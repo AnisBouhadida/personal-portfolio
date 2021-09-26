@@ -24,7 +24,7 @@
     </header>
 
     <section class="splash-img">
-        <img src="assets/pics/me.jpg" alt="a picture of me">
+        <img src="assets/pics/me.jpg" id="personal-pic" alt="a picture of me">
         <svg class="blob-motion" id="visual" viewBox="0 0 500 500" width="960" height="600"
             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
             <g transform="translate(280.7743910955434 262.58749937447294)">
@@ -66,8 +66,9 @@
     </section>
     <section class="green">
         <h1 class="section-title">My skills</h1>
-        <div class="skills">
-            <div class="frontend-skills">
+        <div class="flex-container">
+            <div class="grp-skill flex-item" id="frontend-skills">
+                <p class="grp-skill-header">Front-end</p>
                 <ul class="skills-list">
                     <li>
                         <p>HTML5</p>
@@ -84,7 +85,8 @@
                 </ul>
             </div>
 
-            <div class="backend-skills">
+            <div class="grp-skill flex-item" id="backend-skills">
+                <p class="grp-skill-header">Back-end</p>
                 <ul class="skills-list">
                     <li>
                         <p>JAVA 8</p>
@@ -101,13 +103,23 @@
                 </ul>
             </div>
 
-            <div class="other-skills">
+            <div class="grp-skill flex-item" id="other-skills">
+                <p class="grp-skill-header">Other</p>
+                <ul class="skills-list">
+                    <li>
+                        <p>Flutter</p>
+                    </li>
+                    <li>
+                        <p>Eclipse / IntelliJ IDEA / WebStorm / VScode</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="grp-skill flex-item" id="devops-skills">
+                <p class="grp-skill-header">Devops</p>
                 <ul class="skills-list">
                     <li>
                         <p>Maven / Ant</p>
-                    </li>
-                    <li>
-                        <p>Flutter</p>
                     </li>
                     <li>
                         <p>Git / SVN</p>
@@ -115,13 +127,9 @@
                     <li>
                         <p>Gitlab CI-CD / Jenkins / Rundeck</p>
                     </li>
-                    <li>
-                        <p>Eclipse / IntelliJ IDEA / WebStorm / VScode</p>
-                    </li>
                 </ul>
             </div>
         </div>
-
         <div class="green-wave">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                 preserveAspectRatio="none">
@@ -142,7 +150,7 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias perspiciatis ea eum et odio veniam ut
             laborum quod sit, quae, possimus ullam molestiae sed magnam numquam nostrum placeat eaque amet</p>
 
-            <a href="projects.html">Checkout my personal projects</a>
+        <a href="projects.html">Checkout my personal projects</a>
         <div class="red-wave">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                 preserveAspectRatio="none">

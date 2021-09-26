@@ -3,6 +3,7 @@
 body {
     font-family: 'Dosis', sans-serif;
     margin: 0;
+    padding: 0;
     background: #124559;
     color: #FFFBFC;
 }
@@ -11,25 +12,27 @@ body {
     font-size: 4em;
 }
 
-.section-text {}
-
 /* Header styling */
 
 ul#lang-nav {
     margin-right: 1vh;
-    list-style: none;
     text-align: right;
+    padding: 0;
 }
 
 ul#lang-nav li {
     display: inline;
-    padding-right: 1vh;
+    list-style: none;
+    padding-right: 2vh;
 }
 
 ul#lang-nav li a {
-    padding-left: 10px;
     text-decoration: none;
     color: #FFFBFC;
+}
+
+ul#lang-nav li a:hover {
+    color: #EF798A;
 }
 
 /* Welcome section styling */
@@ -40,14 +43,18 @@ section {
     flex-direction: column;
     align-items: center;
     min-height: 400px;
-    padding: 100px 20vw;
+    padding: 10vh 20vw;
 }
 
 section.splash-img img {
     border-radius: 50%;
     max-width: 350px;
     max-height: 350px;
-    border: 2px #FFFBFC;
+}
+
+section.splash-img img#personal-pic {
+    min-width: 150px;
+    min-height: 150px;
 }
 
 .blob-motion {
@@ -123,22 +130,62 @@ p#aboutme-text {
     fill: #2685E3;
 }
 
-.skills {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1vh;
-    grid-auto-rows: 200px;
-
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: space-between;
+    gap: 2vh 5vw;
 }
 
-.skills-list{
+.grp-skill {
+    width: 300px;
+    margin-bottom: 2vh;
+    border-bottom: 2vh solid #2685E3;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.grp-skill-header {
+    color: black;
+    background-color: #2685E3;
+    padding: 1vh 2vh;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 1.2em;
+    font-weight: 700;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+ul.skills-list {
+    position: relative;
+    background-color: #FFFBFC;
+    margin: 0;
+    padding: 0;
+}
+
+ul.skills-list:hover li {
+    opacity: 0.1;
+}
+
+ul.skills-list li {
     list-style: none;
+    color: black;
+    background-color: #FFFBFC;
+    padding: 1vh;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, .1);
+    transition: transform 0.5s;
 }
 
-.skills-list li {
-    background-color: #185C77;
-    border-radius: 25px;
-    text-align: center;
+ul.skills-list li:hover {
+    box-shadow: 0 5px 25px rgba(0, 0, 0, .2);
+    transform: scale(1.1);
+    z-index: 100;
+    background-color: #2685E3;
+    color: #FFFBFC;
+    opacity: 1;
 }
 
 /* Work experience section styling */
