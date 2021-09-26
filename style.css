@@ -231,6 +231,15 @@ ul.skills-list li:hover {
     height: 215px;
 }
 
+a#toMyProjects{
+    color: #FFFBFC;
+    background-color: #c2606f;
+    padding: 2vh;
+    cursor: pointer;
+    border-radius: 4px 4px;
+    text-decoration: none;
+}
+
 .bottom-red-wave .shape-fill {
     fill: #124559;
 }
