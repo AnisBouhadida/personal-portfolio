@@ -19,7 +19,7 @@
         <ul id="lang-nav">
             <li><a href="#" hreflang="ar">عربي</a></li>
             <li><a href="#" hreflang="fr">FR</a></li>
-            <li><a href="#" hreflang="en">EN</a></li>
+            <li><a href="#" hreflang="en" class="active">EN</a></li>
         </ul>
     </header>
 
@@ -65,22 +65,67 @@
         </div>
     </section>
     <section class="green">
-        <h1 class="section-title">My skills</h1>
+        <svg id="stars" style="display: none;" version="1.1">
+            <symbol id="stars-empty-star" viewBox="0 0 102 18" fill="#F1E8CA">
+                <path
+                    d="M9.5 14.25l-5.584 2.936 1.066-6.218L.465 6.564l6.243-.907L9.5 0l2.792 5.657 6.243.907-4.517 4.404 1.066 6.218" />
+            </symbol>
+            <symbol id="stars-full-star" viewBox="0 0 102 18" fill="#D3A81E">
+                <path
+                    d="M9.5 14.25l-5.584 2.936 1.066-6.218L.465 6.564l6.243-.907L9.5 0l2.792 5.657 6.243.907-4.517 4.404 1.066 6.218" />
+            </symbol>
+            <symbol id="stars-half-star" viewBox="0 0 102 18" fill="#D3A81E">
+                <use xlink:href="#stars-empty-star" />
+                <path d="M9.5 14.25l-5.584 2.936 1.066-6.218L.465 6.564l6.243-.907L9.5 0l2.792" />
+            </symbol>
+        </svg>
+
+        <h1 class="section-title">My tech skills</h1>
         <div class="flex-container">
             <div class="grp-skill flex-item" id="frontend-skills">
                 <p class="grp-skill-header">Front-end</p>
                 <ul class="skills-list">
                     <li>
-                        <p>HTML5</p>
+                        <p>
+                            <span class="text">HTML5 / CSS3</span>
+                            <span class="icon">
+                                <svg aria-hidden="true" focusable="false" class="level">
+                                    <use xlink:href="#stars-full-star" />
+                                    <use xlink:href="#stars-full-star" />
+                                    <use xlink:href="#stars-full-star" />
+                                    <use xlink:href="#stars-full-star" />
+                                    <use xlink:href="#stars-half-star" />
+                                </svg>
+                            </span>
+                        </p>
                     </li>
                     <li>
-                        <p>CSS3</p>
+                        <p>
+                            <span class="text">AngularJs</span>
+                            <span class="icon">
+                                <svg aria-hidden="true" focusable="false" class="level">
+                                    <use xlink:href="#stars-full-star" />
+                                    <use xlink:href="#stars-full-star" />
+                                    <use xlink:href="#stars-full-star" />
+                                    <use xlink:href="#stars-half-star" />
+                                    <use xlink:href="#stars-empty-star" />
+                                </svg>
+                            </span>
+                        </p>
                     </li>
                     <li>
-                        <p>AngularJs</p>
-                    </li>
-                    <li>
-                        <p>Bootstrap</p>
+                        <p>
+                            <span class="text">Bootstrap</span>
+                            <span class="icon">
+                                <svg aria-hidden="true" focusable="false" class="level">
+                                    <use xlink:href="#stars-full-star" />
+                                    <use xlink:href="#stars-full-star" />
+                                    <use xlink:href="#stars-full-star" />
+                                    <use xlink:href="#stars-half-star" />
+                                    <use xlink:href="#stars-empty-star" />
+                                </svg>
+                            </span>
+                        </p>
                     </li>
                 </ul>
             </div>
@@ -89,16 +134,74 @@
                 <p class="grp-skill-header">Back-end</p>
                 <ul class="skills-list">
                     <li>
-                        <p>JAVA 8</p>
+                        <p>
+                            <span class="text">JAVA 8</span>
+                            <span class="icon">
+                                <svg aria-hidden="true" focusable="false" class="level">
+                                    <use xlink:href="#stars-full-star" />
+                                    <use xlink:href="#stars-full-star" />
+                                    <use xlink:href="#stars-full-star" />
+                                    <use xlink:href="#stars-half-star" />
+                                    <use xlink:href="#stars-empty-star" />
+                                </svg>
+                            </span>
+                        </p>
                     </li>
                     <li>
-                        <p>Spring / Spring Batch</p>
+                        <p>
+                            <span class="text">Spring / SpringBoot</span>
+                            <span class="icon">
+                                <svg aria-hidden="true" focusable="false" class="level">
+                                    <use xlink:href="#stars-full-star" />
+                                    <use xlink:href="#stars-full-star" />
+                                    <use xlink:href="#stars-full-star" />
+                                    <use xlink:href="#stars-empty-star" />
+                                    <use xlink:href="#stars-empty-star" />
+                                </svg>
+                            </span>
+                        </p>
                     </li>
                     <li>
-                        <p>JUnit</p>
+                        <p>
+                            <span class="text">SpringBatch</span>
+                            <span class="icon">
+                                <svg aria-hidden="true" focusable="false" class="level">
+                                    <use xlink:href="#stars-full-star" />
+                                    <use xlink:href="#stars-full-star" />
+                                    <use xlink:href="#stars-full-star" />
+                                    <use xlink:href="#stars-full-star" />
+                                    <use xlink:href="#stars-half-star" />
+                                </svg>
+                            </span>
+                        </p>
                     </li>
                     <li>
-                        <p>PostgresQL 9/13</p>
+                        <p>
+                            <span class="text">JUnit</span>
+                            <span class="icon">
+                                <svg aria-hidden="true" focusable="false" class="level">
+                                    <use xlink:href="#stars-full-star" />
+                                    <use xlink:href="#stars-full-star" />
+                                    <use xlink:href="#stars-full-star" />
+                                    <use xlink:href="#stars-full-star" />
+                                    <use xlink:href="#stars-empty-star" />
+                                </svg>
+                            </span>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <span class="text">PostgresQL 9/10/13</span>
+                            <span class="icon">
+                                <svg aria-hidden="true" focusable="false" class="level">
+                                    <use xlink:href="#stars-full-star" />
+                                    <use xlink:href="#stars-full-star" />
+                                    <use xlink:href="#stars-full-star" />
+                                    <use xlink:href="#stars-half-star" />
+                                    <use xlink:href="#stars-empty-star" />
+                                </svg>
+                            </span>
+                        </p>
                     </li>
                 </ul>
             </div>
@@ -107,10 +210,46 @@
                 <p class="grp-skill-header">Other</p>
                 <ul class="skills-list">
                     <li>
-                        <p>Flutter</p>
+                        <p>
+                        <span class="text">Flutter</span>
+                        <span class="icon">
+                            <svg aria-hidden="true" focusable="false" class="level">
+                                <use xlink:href="#stars-full-star" />
+                                <use xlink:href="#stars-full-star" />
+                                <use xlink:href="#stars-half-star" />
+                                <use xlink:href="#stars-empty-star" />
+                                <use xlink:href="#stars-empty-star" />
+                            </svg>
+                        </span>
+                    </p>
                     </li>
                     <li>
-                        <p>Eclipse / IntelliJ IDEA / WebStorm / VScode</p>
+                        <p>
+                            <span class="text">Eclipse</span>
+                            <span class="icon">
+                                <svg aria-hidden="true" focusable="false" class="level">
+                                    <use xlink:href="#stars-full-star" />
+                                    <use xlink:href="#stars-full-star" />
+                                    <use xlink:href="#stars-full-star" />
+                                    <use xlink:href="#stars-half-star" />
+                                    <use xlink:href="#stars-empty-star" />
+                                </svg>
+                            </span>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <span class="text">IntelliJ IDEA / WebStorm</span>
+                            <span class="icon">
+                                <svg aria-hidden="true" focusable="false" class="level">
+                                    <use xlink:href="#stars-full-star" />
+                                    <use xlink:href="#stars-full-star" />
+                                    <use xlink:href="#stars-full-star" />
+                                    <use xlink:href="#stars-empty-star" />
+                                    <use xlink:href="#stars-empty-star" />
+                                </svg>
+                            </span>
+                        </p>
                     </li>
                 </ul>
             </div>
@@ -119,13 +258,46 @@
                 <p class="grp-skill-header">Devops</p>
                 <ul class="skills-list">
                     <li>
-                        <p>Maven / Ant</p>
+                        <p>
+                            <span class="text">Maven</span>
+                            <span class="icon">
+                                <svg aria-hidden="true" focusable="false" class="level">
+                                    <use xlink:href="#stars-full-star" />
+                                    <use xlink:href="#stars-full-star" />
+                                    <use xlink:href="#stars-full-star" />
+                                    <use xlink:href="#stars-half-star" />
+                                    <use xlink:href="#stars-empty-star" />
+                                </svg>
+                            </span>
+                        </p>
                     </li>
                     <li>
-                        <p>Git / SVN</p>
+                        <p>
+                            <span class="text">Git</span>
+                            <span class="icon">
+                                <svg aria-hidden="true" focusable="false" class="level">
+                                    <use xlink:href="#stars-full-star" />
+                                    <use xlink:href="#stars-full-star" />
+                                    <use xlink:href="#stars-full-star" />
+                                    <use xlink:href="#stars-empty-star" />
+                                    <use xlink:href="#stars-empty-star" />
+                                </svg>
+                            </span>
+                        </p>
                     </li>
                     <li>
-                        <p>Gitlab CI-CD / Jenkins / Rundeck</p>
+                        <p>
+                            <span class="text">Gitlab CI-CD / Jenkins</span>
+                            <span class="icon">
+                                <svg aria-hidden="true" focusable="false" class="level">
+                                    <use xlink:href="#stars-full-star" />
+                                    <use xlink:href="#stars-full-star" />
+                                    <use xlink:href="#stars-full-star" />
+                                    <use xlink:href="#stars-empty-star" />
+                                    <use xlink:href="#stars-empty-star" />
+                                </svg>
+                            </span>
+                        </p>
                     </li>
                 </ul>
             </div>
