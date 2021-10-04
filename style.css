@@ -62,13 +62,13 @@ section {
 
 section.splash-img img {
     border-radius: 50%;
-    max-width: 350px;
-    max-height: 350px;
+    max-width: 24vw;
+    max-height: 24vw;
 }
 
 section.splash-img img#personal-pic {
-    min-width: 150px;
-    min-height: 150px;
+    min-width: 24vh;
+    min-height: 24vh;
 }
 
 .blob-motion {
@@ -149,8 +149,7 @@ p#aboutme-text {
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: flex-start;
-    align-content: space-between;
-    gap: 2vh 1vw;
+    gap: 2vh 2vw;
 }
 
 .grp-skill {
@@ -158,6 +157,7 @@ p#aboutme-text {
     border-bottom: 2vh solid #2685E3;
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
+    flex-grow: 1;
 }
 
 .grp-skill-header {
@@ -237,6 +237,16 @@ ul.skills-list li:hover p span.icon svg.level {
     visibility: visible;
 }
 
+a#toMyProjects {
+    color: #FFFBFC;
+    background-color: #066968;
+    padding: 2vh;
+    cursor: pointer;
+    border-radius: 4px 4px;
+    text-decoration: none;
+    margin-top: 5vw;
+}
+
 /* Work experience section styling */
 
 .red {
@@ -280,13 +290,33 @@ ul.skills-list li:hover p span.icon svg.level {
     height: 215px;
 }
 
-a#toMyProjects {
+ul.work-list{
+    list-style: none;
+}
+
+ul.work-list li{
+    display: inline-block;
+}
+
+ul.work-list li p{
+    display: block;
+    box-sizing: border-box;
+    padding: 2vh;
+    border-radius: 50%;
+    background-color: turquoise;
+    width: 30vh;
+    height: 30vh;
+    margin-right: 2vh;
+}
+
+a#fullCurriculum {
     color: #FFFBFC;
-    background-color: #c2606f;
+    background-color: #c26472;
     padding: 2vh;
     cursor: pointer;
     border-radius: 4px 4px;
     text-decoration: none;
+    margin-top: 5vw;
 }
 
 .bottom-red-wave .shape-fill {
