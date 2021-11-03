@@ -296,17 +296,18 @@ ul.work-list{
 
 ul.work-list li{
     display: inline-block;
-}
-
-ul.work-list li p{
-    display: block;
     box-sizing: border-box;
-    padding: 2vh;
     border-radius: 50%;
     background-color: turquoise;
     width: 30vh;
     height: 30vh;
     margin-right: 2vh;
+    text-align: center;
+    line-height: 15vh;
+}
+
+ul.work-list li p{
+ 
 }
 
 a#fullCurriculum {

@@ -1,0 +1,11 @@
+@use "../custom" as *;
+
+.splash-img {
+    background-color: $green;
+    
+    img.personal-pic {
+        border-radius: 50%;
+        max-width: 30vh;
+        height: auto;
+    }
+}

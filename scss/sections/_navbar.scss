@@ -1,0 +1,18 @@
+@use "../custom" as *;
+
+.lang-menu {
+    background: $green !important;
+
+    a {
+        color: $white !important;
+        padding: 0 0.7rem;
+    }
+
+    div > a.active {
+        color: $red !important;
+    }
+
+    div > a:hover {
+        color: $red !important;
+    }
+}

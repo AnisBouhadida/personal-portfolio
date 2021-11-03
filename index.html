@@ -4,43 +4,59 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/kute.js/2.0.0/kute.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Personal website</title>
 </head>
 
 <body>
+    <!-- Start Navbar section -->
     <header>
-        <ul id="lang-nav">
-            <li><a href="#" hreflang="ar">عربي</a></li>
-            <li><a href="#" hreflang="fr">FR</a></li>
-            <li><a href="#" hreflang="en" class="active">EN</a></li>
-        </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark lang-menu">
+            <a class="navbar-brand" href="#"> <img src="assets/pics/logo.png" width="150" alt="logo ANIS BOUHADIDA"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="#" hreflang="ar">عربي</a>
+                    <a class="nav-item nav-link" href="#" hreflang="fr">FR</a>
+                    <a class="nav-item nav-link active" href="#" hreflang="en">EN</a>
+                </div>
+            </div>
+        </nav>
     </header>
-
+    <!-- End Navbar section-->
+    <!-- Start Landing section-->
     <section class="splash-img">
-        <img src="assets/pics/me.jpg" id="personal-pic" alt="a picture of me">
-        <svg class="blob-motion" id="visual" viewBox="0 0 500 500" width="960" height="600"
-            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
-            <g transform="translate(280.7743910955434 262.58749937447294)">
-                <path id="blob-1"
-                    d="M120 -121.2C160.3 -79.7 201.2 -39.8 200.8 -0.4C200.5 39.1 158.9 78.3 118.6 107.1C78.3 135.9 39.1 154.5 -13.1 167.5C-65.3 180.6 -130.6 188.2 -182.7 159.4C-234.7 130.6 -273.6 65.3 -259.4 14.2C-245.2 -36.8 -177.8 -73.7 -125.7 -115.2C-73.7 -156.7 -36.8 -202.8 1.5 -204.3C39.8 -205.8 79.7 -162.7 120 -121.2"
-                    fill="#185C77"></path>
-            </g>
-            <g transform="translate(228.95186281573947 278.84613302840046)" style="visibility: hidden;">
-                <path id="blob-2"
-                    d="M116.7 -125.5C159.7 -73.7 208.8 -36.8 225.5 16.7C242.2 70.2 226.5 140.5 183.5 176.6C140.5 212.8 70.2 214.9 9.1 205.8C-52.1 196.8 -104.2 176.5 -132 140.3C-159.8 104.2 -163.4 52.1 -174.2 -10.8C-185 -73.7 -203 -147.3 -175.1 -199.1C-147.3 -251 -73.7 -281 -18.4 -262.6C36.8 -244.2 73.7 -177.3 116.7 -125.5"
-                    fill="#185C77"></path>
-            </g>
-        </svg>
-        <p id="welcome-text">Hi, I'm Anis Bouhadida</p>
-        <a id="toAboutMe" href="#blue"><img id="down-arrow" src="assets/pics/arrow.png" alt="down arrow"></a>
+        <div class="row">
+            <img src="assets/pics/me.jpg" class="img-fluid mx-auto d-block personal-pic" alt="a picture of me">
+            <svg class="blob-motion" id="visual" viewBox="0 0 500 500" width="960" height="600"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                <g transform="translate(280.7743910955434 262.58749937447294)">
+                    <path id="blob-1"
+                        d="M120 -121.2C160.3 -79.7 201.2 -39.8 200.8 -0.4C200.5 39.1 158.9 78.3 118.6 107.1C78.3 135.9 39.1 154.5 -13.1 167.5C-65.3 180.6 -130.6 188.2 -182.7 159.4C-234.7 130.6 -273.6 65.3 -259.4 14.2C-245.2 -36.8 -177.8 -73.7 -125.7 -115.2C-73.7 -156.7 -36.8 -202.8 1.5 -204.3C39.8 -205.8 79.7 -162.7 120 -121.2"
+                        fill="#185C77"></path>
+                </g>
+                <g transform="translate(228.95186281573947 278.84613302840046)" style="visibility: hidden;">
+                    <path id="blob-2"
+                        d="M116.7 -125.5C159.7 -73.7 208.8 -36.8 225.5 16.7C242.2 70.2 226.5 140.5 183.5 176.6C140.5 212.8 70.2 214.9 9.1 205.8C-52.1 196.8 -104.2 176.5 -132 140.3C-159.8 104.2 -163.4 52.1 -174.2 -10.8C-185 -73.7 -203 -147.3 -175.1 -199.1C-147.3 -251 -73.7 -281 -18.4 -262.6C36.8 -244.2 73.7 -177.3 116.7 -125.5"
+                        fill="#185C77"></path>
+                </g>
+            </svg>
+        </div>
+        <div class="row">
+            <p id="welcome-text">Hi, I'm Anis Bouhadida</p>
+        </div>
+        <div class="row">
+            <a id="toAboutMe" href="#blue"><img id="down-arrow" src="assets/pics/arrow.png" alt="down arrow"></a>
+        </div>
     </section>
+    <!-- End Landing section-->
     <section id="blue" class="blue">
         <h1 class="section-title">About me</h1>
         <p class="section-text" id="aboutme-text">Software engineer graduated from a Master in Public Health specialized
@@ -581,9 +597,15 @@
     <section class="red">
         <h1 class="section-title">Work experience</h1>
         <ul class="work-list">
-            <li><p>Internship</p></li>
-            <li><p>Internship</p></li>
-            <li><p>Solution builder</p></li>
+            <li>
+                <p>Internship</p>
+            </li>
+            <li>
+                <p>Internship</p>
+            </li>
+            <li>
+                <p>Solution builder</p>
+            </li>
         </ul>
         <a id="fullCurriculum" href="#">Download my full curriculum</a>
         <div class="red-wave">
@@ -646,6 +668,14 @@
     </footer>
 
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/kute.js/2.0.0/kute.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 <script src="main.js"></script>
 
 </html>
