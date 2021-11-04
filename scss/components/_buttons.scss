@@ -1,0 +1,12 @@
+@use '../custom' as *;
+
+.btn-circle{
+    margin-top: 2rem;
+    width: auto;
+    position: relative;
+
+    i{
+        font-size: 4rem;
+        color: $white;
+    }
+}

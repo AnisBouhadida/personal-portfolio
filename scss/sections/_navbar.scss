@@ -6,13 +6,14 @@
     a {
         color: $white !important;
         padding: 0 0.7rem;
+        margin-left: 1rem;
     }
 
-    div > a.active {
+    ul>li>a.active {
         color: $red !important;
     }
 
-    div > a:hover {
+    ul>li>a:hover {
         color: $red !important;
     }
 }

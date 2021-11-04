@@ -1,20 +1,32 @@
+// use custom variables
 @use "../custom" as *;
 
+// Landing section styling
 .landing-section {
-    background-color: $green;
     padding: 10vh 20vw;
-    
+
     img.personal-pic {
         border-radius: 50%;
         max-width: 35vh;
         height: auto;
-        z-index: 1;
     }
 
-    .blob-motion {
+    .border-animation {
         position: absolute;
-        transform: translate(-2% ,-2%);
-        max-width: 60vh;
-        height: auto;
+        top: 0;
+        left: 0;
+        transform: translateX(18%);
+        width: 4rem;
+        height: 4rem;
+        border: 0.55rem solid $green-dark;
+        border-radius: 50%;
+        animation: pulse-border 1.5s linear infinite;
+
+        &--border-1 {
+            animation-delay: 1.2s;
+        }
+        &--border-2 {
+            animation-delay: 1.5s;
+        }
     }
 }
