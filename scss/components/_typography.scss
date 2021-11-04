@@ -1,0 +1,13 @@
+@use '../custom' as *;
+
+.display-2{
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    z-index: 1;
+    
+    &--intro{
+        text-align: center;
+        color: $white;
+        padding-top: 30px;
+    }
+}

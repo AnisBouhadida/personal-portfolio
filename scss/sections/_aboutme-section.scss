@@ -1,0 +1,23 @@
+@use "../custom" as *;
+
+.aboutMe-section {
+background-color: $blue;
+
+.blue-wave {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.blue-wave svg {
+    position: relative;
+    display: block;
+    width: calc(160% + 1.3px);
+    height: 177px;
+}
+
+.blue-wave .shape-fill {
+    fill: $green;
+}
+
+}

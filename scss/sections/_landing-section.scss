@@ -1,11 +1,20 @@
 @use "../custom" as *;
 
-.splash-img {
+.landing-section {
     background-color: $green;
+    padding: 10vh 20vw;
     
     img.personal-pic {
         border-radius: 50%;
-        max-width: 30vh;
+        max-width: 35vh;
+        height: auto;
+        z-index: 1;
+    }
+
+    .blob-motion {
+        position: absolute;
+        transform: translate(-2% ,-2%);
+        max-width: 60vh;
         height: auto;
     }
 }
