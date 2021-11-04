@@ -1,23 +1,22 @@
+// use custom variables
 @use "../custom" as *;
 
-.aboutMe-section {
-background-color: $blue;
-
-.blue-wave {
-    width: 100%;
+// About me section styling
+.aboutme-section {
+    background-color: $blue;
     overflow: hidden;
-    line-height: 0;
-}
+    .blue-wave {
+        svg {
+            position: relative;
+            display: block;
+            width: calc(160% + 1.3px);
+            height: 177px;
+        }
 
-.blue-wave svg {
-    position: relative;
-    display: block;
-    width: calc(160% + 1.3px);
-    height: 177px;
-}
+        .shape-fill {
+            fill: $green;
+        }
+    }
 
-.blue-wave .shape-fill {
-    fill: $green;
-}
-
+    
 }

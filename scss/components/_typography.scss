@@ -12,7 +12,6 @@ body {
 .display-2 {
     margin-bottom: 1rem;
     text-transform: capitalize;
-    z-index: 1;
     text-align: center;
 
     &--intro {
@@ -31,6 +30,81 @@ body {
 
         @include media-breakpoint-down(sm) {
             font-size: 1rem;
+        }
+    }
+}
+
+// about me section typography
+.display-4 {
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    text-align: center;
+
+    &--title {
+        padding-top: 30px;
+        font-family: "Dosis", sans-serif;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    &--text {
+        font-size: 1.5rem;
+        font-weight: 200;
+        font-family: "Dosis", sans-serif;
+        text-transform: none;
+        text-align: justify;
+        padding: 0 20rem;
+        margin-top: 1rem;
+        line-height: 2;
+
+        @include media-breakpoint-down(lg) {
+            font-size: 1.2rem;
+            padding: 0 10rem;
+        }
+
+        @include media-breakpoint-down(sm) {
+            font-size: 1rem;
+            padding: 0;
+        }
+    }
+}
+
+// skills section typography
+.grp-skill {
+    &--header {
+        color: $black;
+        font-size: 1.2rem;
+        font-weight: 700;
+        padding: 1vh 2vh;
+        margin: 0;
+
+        @include media-breakpoint-down(sm){
+            font-size: 1rem;
+            padding: 0.5vh 1vh;
+        }
+    }
+
+    .skills-list {
+        li {
+            list-style: none;
+            color: $black;
+            padding: 1vh;
+
+            @include media-breakpoint-down(sm){
+                padding: 0.5vh;
+            }
+
+            &:hover {
+                color: $white;
+            }
+
+            p{
+                font-size: 1rem;
+                
+                @include media-breakpoint-down(sm){
+                    font-size: 0.8rem;
+                }
+            }
         }
     }
 }

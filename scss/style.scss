@@ -22,3 +22,33 @@ body {
     padding: 0;
     background: #124559;
 }
+
+// heading line styling
+.heading-line::before {
+    content: "";
+    width: 15rem;
+    height: 0.1rem;
+    display: block;
+    margin: 0 auto;
+    background-color: $green;
+
+    @include media-breakpoint-down(sm) {
+        width: 10rem;
+        height: 0.07rem;
+    }
+}
+
+.heading-line::after {
+    content: "";
+    width: 3rem;
+    height: 0.2rem;
+    padding-top: 0.4rem;
+    display: block;
+    margin: 0 auto;
+    background-color: $green;
+
+    @include media-breakpoint-down(sm) {
+        width: 2rem;
+        padding: 0;
+    }
+}

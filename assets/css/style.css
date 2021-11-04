@@ -11147,7 +11147,6 @@ body {
 .display-2 {
   margin-bottom: 1rem;
   text-transform: capitalize;
-  z-index: 1;
   text-align: center;
 }
 .display-2--intro {
@@ -11169,21 +11168,86 @@ body {
   }
 }
 
-.aboutMe-section {
+.display-4 {
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+  text-align: center;
+}
+.display-4--title {
+  padding-top: 30px;
+  font-family: "Dosis", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.display-4--text {
+  font-size: 1.5rem;
+  font-weight: 200;
+  font-family: "Dosis", sans-serif;
+  text-transform: none;
+  text-align: justify;
+  padding: 0 20rem;
+  margin-top: 1rem;
+  line-height: 2;
+}
+@media (max-width: 991.98px) {
+  .display-4--text {
+    font-size: 1.2rem;
+    padding: 0 10rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .display-4--text {
+    font-size: 1rem;
+    padding: 0;
+  }
+}
+
+.grp-skill--header {
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 1vh 2vh;
+  margin: 0;
+}
+@media (max-width: 575.98px) {
+  .grp-skill--header {
+    font-size: 1rem;
+    padding: 0.5vh 1vh;
+  }
+}
+.grp-skill .skills-list li {
+  list-style: none;
+  color: #000;
+  padding: 1vh;
+}
+@media (max-width: 575.98px) {
+  .grp-skill .skills-list li {
+    padding: 0.5vh;
+  }
+}
+.grp-skill .skills-list li:hover {
+  color: #fffbfc;
+}
+.grp-skill .skills-list li p {
+  font-size: 1rem;
+}
+@media (max-width: 575.98px) {
+  .grp-skill .skills-list li p {
+    font-size: 0.8rem;
+  }
+}
+
+.aboutme-section {
   background-color: #2685e3;
-}
-.aboutMe-section .blue-wave {
-  width: 100%;
   overflow: hidden;
-  line-height: 0;
 }
-.aboutMe-section .blue-wave svg {
+.aboutme-section .blue-wave svg {
   position: relative;
   display: block;
   width: calc(160% + 1.3px);
   height: 177px;
 }
-.aboutMe-section .blue-wave .shape-fill {
+.aboutme-section .blue-wave .shape-fill {
   fill: #124559;
 }
 
@@ -11221,20 +11285,16 @@ body {
   padding: 0 0.7rem;
   margin-left: 1rem;
 }
-.lang-menu ul > li > a.active {
+.lang-menu a.active {
   color: #ef798a !important;
 }
-.lang-menu ul > li > a:hover {
+.lang-menu a:hover {
   color: #ef798a !important;
 }
 
 .skills-section {
   background-color: #00cecb;
-}
-.skills-section .green-wave {
-  width: 100%;
   overflow: hidden;
-  line-height: 0;
 }
 .skills-section .green-wave svg {
   position: relative;
@@ -11243,84 +11303,67 @@ body {
   height: 181px;
 }
 .skills-section .green-wave .shape-fill {
-  fill: #2685E3;
+  fill: #2685e3;
 }
-.skills-section .flex-container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 2vh 2vw;
-}
-.skills-section .grp-skill {
-  width: 300px;
-  border-bottom: 2vh solid #2685E3;
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
-  flex-grow: 1;
-}
-.skills-section .grp-skill-header {
-  color: black;
-  background-color: #2685E3;
-  padding: 1vh 2vh;
-  margin: 0;
+.skills-section .grp-skill--header {
+  background-color: #2685e3;
   box-sizing: border-box;
-  font-size: 1.2em;
-  font-weight: 700;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
 }
-.skills-section ul.skills-list {
+.skills-section .grp-skill--footer {
+  border-bottom: 2vh solid #2685e3;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.skills-section .grp-skill .skills-list {
   position: relative;
-  background-color: #FFFBFC;
+  background-color: #fffbfc;
   margin: 0;
   padding: 0;
 }
-.skills-section ul.skills-list:hover li {
+.skills-section .grp-skill .skills-list:hover li {
   opacity: 0.1;
 }
-.skills-section ul.skills-list li {
-  list-style: none;
-  color: black;
-  background-color: #FFFBFC;
-  padding: 1vh;
+.skills-section .grp-skill .skills-list li {
+  background-color: #fffbfc;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
   transition: transform 0.5s;
 }
-.skills-section span.icon {
-  height: 20px;
-  float: right;
-}
-.skills-section span.text, .skills-section span.icon {
+.skills-section .grp-skill .skills-list li p span.text,
+.skills-section .grp-skill .skills-list li p span.icon {
   vertical-align: middle;
   display: inline-block;
 }
-.skills-section ul.skills-list li p span.icon svg.level {
+.skills-section .grp-skill .skills-list li p span.icon {
+  height: 20px;
+  float: right;
+}
+.skills-section .grp-skill .skills-list li p span.icon svg.level {
   visibility: hidden;
   height: 20px;
   width: 100px;
 }
-.skills-section ul.skills-list li p span.icon svg.level use:nth-child(2) {
+.skills-section .grp-skill .skills-list li p span.icon svg.level use:nth-child(2) {
   transform: translate(20px);
 }
-.skills-section ul.skills-list li p span.icon svg.level use:nth-child(3) {
+.skills-section .grp-skill .skills-list li p span.icon svg.level use:nth-child(3) {
   transform: translate(40px);
 }
-.skills-section ul.skills-list li p span.icon svg.level use:nth-child(4) {
+.skills-section .grp-skill .skills-list li p span.icon svg.level use:nth-child(4) {
   transform: translate(60px);
 }
-.skills-section ul.skills-list li p span.icon svg.level use:nth-child(5) {
+.skills-section .grp-skill .skills-list li p span.icon svg.level use:nth-child(5) {
   transform: translate(80px);
 }
-.skills-section ul.skills-list li:hover {
+.skills-section .grp-skill .skills-list li:hover {
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
   transform: scale(1.1);
   z-index: 100;
-  background-color: #2685E3;
-  color: #FFFBFC;
+  background-color: #2685e3;
   opacity: 1;
 }
-.skills-section ul.skills-list li:hover p span.icon svg.level {
+.skills-section .grp-skill .skills-list li:hover p span.icon svg.level {
   visibility: visible;
 }
 
@@ -11328,6 +11371,37 @@ body {
   margin: 0;
   padding: 0;
   background: #124559;
+}
+
+.heading-line::before {
+  content: "";
+  width: 15rem;
+  height: 0.1rem;
+  display: block;
+  margin: 0 auto;
+  background-color: #124559;
+}
+@media (max-width: 575.98px) {
+  .heading-line::before {
+    width: 10rem;
+    height: 0.07rem;
+  }
+}
+
+.heading-line::after {
+  content: "";
+  width: 3rem;
+  height: 0.2rem;
+  padding-top: 0.4rem;
+  display: block;
+  margin: 0 auto;
+  background-color: #124559;
+}
+@media (max-width: 575.98px) {
+  .heading-line::after {
+    width: 2rem;
+    padding: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -7,13 +7,13 @@
         color: $white !important;
         padding: 0 0.7rem;
         margin-left: 1rem;
-    }
 
-    ul>li>a.active {
-        color: $red !important;
-    }
+        &.active {
+            color: $red !important;
+        }
 
-    ul>li>a:hover {
-        color: $red !important;
+        &:hover {
+            color: $red !important;
+        }
     }
 }
