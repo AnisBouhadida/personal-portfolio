@@ -53,7 +53,7 @@ body {
         font-family: "Dosis", sans-serif;
         text-transform: none;
         text-align: justify;
-        padding: 0 20rem;
+        padding: 0 10rem;
         margin-top: 1rem;
         line-height: 2;
 
@@ -100,7 +100,7 @@ body {
 
             p{
                 font-size: 1rem;
-                
+
                 @include media-breakpoint-down(sm){
                     font-size: 0.8rem;
                 }
@@ -108,3 +108,7 @@ body {
         }
     }
 }
+
+// curriculum section typography
+
+// contactme section typography

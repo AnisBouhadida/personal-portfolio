@@ -1,0 +1,20 @@
+// use custom variables
+@use "../custom" as *;
+
+.curriculum-section{
+    background: $red;
+    overflow: hidden;
+
+    .red-wave {
+        svg {
+            position: relative;
+            display: block;
+            width: calc(183% + 1.3px);
+            height: 215px;
+        }
+        .shape-fill {
+            fill: $secondary;
+        }
+    
+    }
+}

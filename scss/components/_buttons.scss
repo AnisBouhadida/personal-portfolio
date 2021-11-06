@@ -10,3 +10,15 @@
         color: $white;
     }
 }
+
+.btn-rounded{
+    padding: 1rem;
+    background-color: $green-dark;
+    border-radius: 6px;
+    text-decoration: none;
+    color: $white;
+
+    &:hover{
+        color: $red;
+    }
+}

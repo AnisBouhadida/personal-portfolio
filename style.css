@@ -21,9 +21,7 @@ img#down-arrow {
 
 /* About me section styling */
 
-.blue {
-    background: #2685E3;
-}
+
 
 .blue-wave {
     position: absolute;
@@ -34,17 +32,6 @@ img#down-arrow {
     line-height: 0;
 }
 
-.blue-wave svg {
-    position: relative;
-    display: block;
-    width: calc(160% + 1.3px);
-    height: 177px;
-}
-
-.blue-wave .shape-fill {
-    fill: #124559;
-}
-
 p#aboutme-text {
     text-align: justify;
     text-justify: newspaper;
@@ -52,92 +39,9 @@ p#aboutme-text {
 
 /* Skills section styling */
 
-a#toMyProjects {
-    color: #FFFBFC;
-    background-color: #066968;
-    padding: 2vh;
-    cursor: pointer;
-    border-radius: 4px 4px;
-    text-decoration: none;
-    margin-top: 5vw;
-}
 
 /* Work experience section styling */
 
-.red {
-    background: #EF798A;
-}
-
-.red-wave {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.red-wave svg {
-    position: relative;
-    display: block;
-    width: calc(183% + 1.3px);
-    height: 215px;
-}
-
-.red-wave .shape-fill {
-    fill: #00CECB;
-}
-
-.bottom-red-wave {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.bottom-red-wave svg {
-    position: relative;
-    display: block;
-    width: calc(183% + 1.3px);
-    height: 215px;
-}
-
-ul.work-list{
-    list-style: none;
-}
-
-ul.work-list li{
-    display: inline-block;
-    box-sizing: border-box;
-    border-radius: 50%;
-    background-color: turquoise;
-    width: 30vh;
-    height: 30vh;
-    margin-right: 2vh;
-    text-align: center;
-    line-height: 15vh;
-}
-
-ul.work-list li p{
- 
-}
-
-a#fullCurriculum {
-    color: #FFFBFC;
-    background-color: #c26472;
-    padding: 2vh;
-    cursor: pointer;
-    border-radius: 4px 4px;
-    text-decoration: none;
-    margin-top: 5vw;
-}
-
-.bottom-red-wave .shape-fill {
-    fill: #124559;
-}
 
 /* Contact section styling */
 

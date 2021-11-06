@@ -33,13 +33,13 @@
     </header>
     <!-- End Navbar section-->
     <!-- Start Landing section-->
-    <section class="landing-section container-fluid">
-        <div class="row align-items-center justify-content-center">
+    <section class="landing-section container">
+        <div class="row">
             <img src="assets/img/me.jpg" class="img-fluid mx-auto d-block personal-pic"
                 alt="a picture of anis bouhadida">
         </div>
-        <div class="row justify-content-center">
-            <h1 class="display-2 display-2--intro">hi, i'm anis bouhadida</h1>
+        <div class="row">
+            <p class="display-2 display-2--intro">hi, i'm anis bouhadida</p>
             <p class="display-2 display-2--description">MedTech specialized software engineer</p>
         </div>
         <div class="row justify-content-center">
@@ -69,7 +69,7 @@
             </svg>
         </div>
         <!-- End wave separation SVG -->
-        <div class="container-fluid justify-content-center">
+        <div class="container justify-content-center">
             <h1 class="row-cols-1 display-4 display-4--title">About me</h1>
             <span class="heading-line mb-5"></span>
             <p class="row-cols-1 display-4 display-4--text">Software engineer graduated from a Master in
@@ -118,11 +118,11 @@
             </svg>
         </div>
         <!-- End wave separation SVG -->
-        <div class="container-fluid justify-content-center">
+        <div class="container">
             <h1 class="row-cols-1 display-4 display-4--title">My technical skills</h1>
-            <span class="heading-line mb-5"></span>
-            <div class="row mt-5">
-                <div class="col-md-4 mb-3 grp-skill" id="frontend-skills">
+            <span class="heading-line"></span>
+            <div class="row row-cols-md-2 row-cols-lg-3 row-cols-1 mt-5">
+                <div class="col mb-3 grp-skill" id="frontend-skills">
                     <p class="grp-skill--header">Front-end</p>
                     <ul class="skills-list">
                         <li>
@@ -212,7 +212,7 @@
                     </ul>
                     <div class="grp-skill--footer"></div>
                 </div>
-                <div class="col-md-4 mb-3 grp-skill" id="backend-skills">
+                <div class="col mb-3 grp-skill" id="backend-skills">
                     <p class="grp-skill--header">Back-end</p>
                     <ul class="skills-list">
                         <li>
@@ -330,7 +330,7 @@
                     </ul>
                     <div class="grp-skill--footer"></div>
                 </div>
-                <div class="col-md-4 mb-3 grp-skill" id="ide-skills">
+                <div class="col mb-3 grp-skill" id="ide-skills">
                     <p class="grp-skill--header">IDE's & Text editors</p>
                     <ul class="skills-list">
                         <li>
@@ -392,7 +392,7 @@
                     </ul>
                     <div class="grp-skill--footer"></div>
                 </div>
-                <div class="col-md-4 mb-3 grp-skill" id="devops-skills">
+                <div class="col mb-3 grp-skill" id="devops-skills">
                     <p class="grp-skill--header">CI-CD, Devops & Automation</p>
                     <ul class="skills-list">
                         <li>
@@ -524,7 +524,7 @@
                     </ul>
                     <div class="grp-skill--footer"></div>
                 </div>
-                <div class="col-md-4 mb-3 grp-skill" id="os-skills">
+                <div class="col mb-3 grp-skill" id="os-skills">
                     <p class="grp-skill--header">Operating systems</p>
                     <ul class="skills-list">
                         <li>
@@ -572,7 +572,7 @@
                     </ul>
                     <div class="grp-skill--footer"></div>
                 </div>
-                <div class="col-md-4 mb-3 grp-skill" id="concept-skills">
+                <div class="col mb-3 grp-skill" id="concept-skills">
                     <p class="grp-skill--header">Modeling & design</p>
                     <ul class="skills-list">
                         <li>
@@ -607,29 +607,15 @@
                     <div class="grp-skill--footer"></div>
                 </div>
             </div>
-            <div class="row-cols-1 text-center">
-                <a id="toMyProjects" href="projects.html">Checkout my personal projects</a>
+            <div class="row-cols-1 text-center mb-4 mt-5">
+                <a id="toMyProjects" class="btn-rounded shadow" href="projects.html">Checkout my personal projects</a>
             </div>
-
         </div>
-
     </section>
     <!-- End Skills section-->
     <!-- Start Curriculum section -->
-    <section class="curriculum-section">
-        <h1 class="section-title">Work experience</h1>
-        <ul class="work-list">
-            <li>
-                <p>Internship</p>
-            </li>
-            <li>
-                <p>Internship</p>
-            </li>
-            <li>
-                <p>Solution builder</p>
-            </li>
-        </ul>
-        <a id="fullCurriculum" href="#">Download my full curriculum</a>
+    <section class="curriculum-section container-fluid p-0">
+        <!-- Start wave separation SVG -->
         <div class="red-wave">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                 preserveAspectRatio="none">
@@ -644,29 +630,92 @@
                     class="shape-fill"></path>
             </svg>
         </div>
+        <!-- End wave separation SVG -->
+        <div class="container">
+            <h1 class="row-cols-1 display-4 display-4--title">Work experience</h1>
+            <span class="heading-line"></span>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 mt-5 mb-5">
+                <div class="col mb-2">
+                    <div class="card h-100 shadow">
+                        <div class="card-body">
+                            <h5 class="card-title text-dark">Web Developer Intern</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">LIMICS, Paris</h6>
+                            <p class="card-text text-dark">Master 1 internship in the laboratory of medical informatics
+                                and e-health knowledge engineering (LIMICS of Bobigny) and during which I was interested
+                                in the development of web-based serious games.
+                                My role was to conceptualize a serious game and develop a prototype of this game.
+                                Tasks performed:
+                            <ul class="text-dark">
+                                <li>Reporting through daily wikis.</li>
+                                <li>Weekly presentation of the progress of the project.</li>
+                                <li>Bibliographic research on serious games and web technologies for games.</li>
+                                <li>Design (Graphic interfaces and Scenario).</li>
+                                <li>Development of a prototype using web technologies.</li>
+                            </ul>
+                            </p>
+                        </div>
+                        <div class="card-footer bg-primary">
+                            <small class="text-light">may 2018 - jul 2018 (2 months)</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-2">
+                    <div class="card h-100 shadow">
+                        <div class="card-body">
+                            <h5 class="card-title text-dark">E-Health Developer Intern</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Sopra Steria, Paris</h6>
+                            <p class="card-text text-dark">Worked in the maintenance of a healthcare IT system
+                            <ul class="text-dark">
+                                <li>Development of software tests</li>
+                                <li>Reverse-engineering / Reverse-design / Refactoring</li>
+                                <li>Defects fixing and reporting through an ALM system</li>
+                            </ul>
+                            <p class="text-dark">
+                                Also, worked during the framing and design of a PWA application :
+                            </p>
+                            <ul class="text-dark">
+                                <li>Animating the work sessions as the project's Scrum master</li>
+                                <li>Capitalization and reporting</li>
+                                <li>Technical design of the web app</li>
+                            </ul>
+                            </p>
+                        </div>
+                        <div class="card-footer bg-primary">
+                            <small class="text-light">fev 2019 - aug 2019 (6 months)</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-2">
+                    <div class="card h-100 shadow">
+                        <div class="card-body">
+                            <h5 class="card-title text-dark">Software engineer</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Sopra Steria, Paris</h6>
+                            <p class="card-text text-dark">Working on various healthcare IT systems, my tasks:
+                            <ul class="text-dark">
+                                <li>Technical design of new applications / features.</li>
+                                <li>Writing technical specifications / documentation</li>
+                                <li>Bug fixing.</li>
+                                <li>Full-stack development : AngularJs, Java/JEE, SpringBoot/SpringBatch, shell.</li>
+                                <li>Devops tasks : CI-CD, automation.</li>
+                                <li>Training new devs, ensure backup of the tech lead.</li>
+                            </ul>
+                            </p>
+                        </div>
+                        <div class="card-footer bg-primary">
+                            <small class="text-light">nov 2019 - current (26 months)</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row-cols-1 text-center mb-4 mt-2">
+                <a id="fullCurriculum" class="btn-rounded shadow" href="#">Download my full curriculum</a>
+            </div>
+        </div>
     </section>
     <!-- End Curriculum section -->
     <!-- Start Contact section -->
-    <section class="contact-section">
-        <h1 class="section-title">Contact me</h1>
-        <div class="form-container">
-            <form action="">
-                <input type="text" name="name" id="name" placeholder="Name" onfocus="this.placeholder=''"
-                    onblur="this.placeholder='Name'">
-
-                <input type="text" name="mail" id="mail" placeholder="Email" onfocus="this.placeholder=''"
-                    onblur="this.placeholder='Email'">
-
-                <input type="text" name="title" id="title" placeholder="Object" onfocus="this.placeholder=''"
-                    onblur="this.placeholder='Object'">
-
-                <textarea type="text" name="message" id="message" placeholder="Message" onfocus="this.placeholder=''"
-                    onblur="this.placeholder='Message'"></textarea>
-                <br>
-                <input type="submit" value="Send">
-            </form>
-        </div>
-
+    <section class="contact-section container-fluid p-0">
+        <!-- Start wave separation SVG -->
         <div class="form-wave">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                 preserveAspectRatio="none">
@@ -680,6 +729,74 @@
                     d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
                     class="shape-fill"></path>
             </svg>
+        </div>
+        <!-- End wave separation SVG -->
+        <div class="container">
+            <h1 class="row-cols-1 display-4 display-4--title">Contact me</h1>
+            <span class="heading-line__light mb-5"></span>
+            <div class="row row-cols-2 mt-5 mb-5">
+                <div class="col-12 col-lg-6 bg-primary shadow p-3">
+                    <div class="contact-info w-100">
+                        <h3 class="display-5">Links</h3>
+                        <p class="lh-lg">Hit me on my social media profiles</p>
+                        <div class="container contact-info__links">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="contact-info__links--logo"><span><i class="fab fa-twitter-square"></i><a
+                                                class="text-white p-1" href="http://">@toto</a></span></div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="contact-info__links--logo"><span><i class="fab fa-facebook"></i><a
+                                                class="text-white p-1" href="http://">@toto</a></span></div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="contact-info__links--logo"><span><i class="fab fa-linkedin-in"></i><a
+                                                class="text-white p-1" href="http://">@toto</a></span></div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="contact-info__links--logo"><span><i class="fab fa-instagram"></i><a
+                                                class="text-white p-1" href="http://">@toto</a></span></div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="contact-info__links--logo"><span><i class="fab fa-github"></i><a
+                                                class="text-white p-1" href="http://">@toto</a></span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 bg-white shadow p-3">
+                    <div class="contact-form w-100 pb-2">
+                        <h3 class="display-5 text-dark">Contact form</h3>
+                        <p class="lh-lg text-dark">Leave me a message and i'll get back to you asap.</p>
+                        <form action="#" class="row">
+                            <div class="mb-3"><input type="text" name="name" id="name" placeholder="Name"
+                                    onfocus="this.placeholder=''" onblur="this.placeholder='Name'"
+                                    class="shadow form-control-lg form-control"></div>
+
+                            <div class="mb-3"><input type="text" name="mail" id="mail" placeholder="Email"
+                                    onfocus="this.placeholder=''" onblur="this.placeholder='Email'"
+                                    class="shadow form-control-lg form-control"></div>
+
+                            <div class="mb-3"><input type="text" name="title" id="title" placeholder="Object"
+                                    onfocus="this.placeholder=''" onblur="this.placeholder='Object'"
+                                    class="shadow form-control-lg form-control"></div>
+
+                            <div class="mb-3"><textarea type="text" name="message" id="message" placeholder="Message"
+                                    onfocus="this.placeholder=''" onblur="this.placeholder='Message'"
+                                    class="shadow form-control-lg form-control" rows="8"></textarea></div>
+                            <br>
+                            <div class="mb-3"><input type="submit" value="Send"
+                                    class="btn btn-primary rounded-pill shadow form-control-lg form-control">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <form action="">
+
+            </form>
+        </div>
         </div>
     </section>
     <!-- End Contact section -->

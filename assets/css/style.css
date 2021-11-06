@@ -11138,6 +11138,17 @@ textarea.form-control-lg {
   color: #fffbfc;
 }
 
+.btn-rounded {
+  padding: 1rem;
+  background-color: #185c77;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #fffbfc;
+}
+.btn-rounded:hover {
+  color: #ef798a;
+}
+
 body {
   font-family: "Dosis", sans-serif;
   font-weight: 400;
@@ -11185,7 +11196,7 @@ body {
   font-family: "Dosis", sans-serif;
   text-transform: none;
   text-align: justify;
-  padding: 0 20rem;
+  padding: 0 10rem;
   margin-top: 1rem;
   line-height: 2;
 }
@@ -11251,8 +11262,58 @@ body {
   fill: #124559;
 }
 
+.contact-section .form-wave svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 192px;
+}
+.contact-section .form-wave .shape-fill {
+  fill: #ef798a;
+}
+.contact-section .contact-info {
+  padding: 3rem;
+  margin: 1rem 0;
+}
+.contact-section .contact-info__links--logo {
+  max-width: 100%;
+  height: 3rem;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  text-align: center;
+}
+.contact-section .contact-info__links--logo i {
+  font-size: 3rem;
+  margin-right: 1rem;
+  color: #124559;
+}
+.contact-section .contact-info__links--logo a {
+  font-size: 1.2rem;
+}
+.contact-section .contact-form {
+  padding: 3rem;
+}
+.contact-section .contact-form input[type=submit] {
+  border: none;
+  color: #fffbfc;
+}
+
+.curriculum-section {
+  background: #ef798a;
+  overflow: hidden;
+}
+.curriculum-section .red-wave svg {
+  position: relative;
+  display: block;
+  width: calc(183% + 1.3px);
+  height: 215px;
+}
+.curriculum-section .red-wave .shape-fill {
+  fill: #00cecb;
+}
+
 .landing-section {
-  padding: 10vh 20vw;
+  padding: 10vh 0;
 }
 .landing-section img.personal-pic {
   border-radius: 50%;
@@ -11387,7 +11448,6 @@ body {
     height: 0.07rem;
   }
 }
-
 .heading-line::after {
   content: "";
   width: 3rem;
@@ -11399,6 +11459,35 @@ body {
 }
 @media (max-width: 575.98px) {
   .heading-line::after {
+    width: 2rem;
+    padding: 0;
+  }
+}
+.heading-line__light::before {
+  content: "";
+  width: 15rem;
+  height: 0.1rem;
+  display: block;
+  margin: 0 auto;
+  background-color: #ef798a;
+}
+@media (max-width: 575.98px) {
+  .heading-line__light::before {
+    width: 10rem;
+    height: 0.07rem;
+  }
+}
+.heading-line__light::after {
+  content: "";
+  width: 3rem;
+  height: 0.2rem;
+  padding-top: 0.4rem;
+  display: block;
+  margin: 0 auto;
+  background-color: #ef798a;
+}
+@media (max-width: 575.98px) {
+  .heading-line__light::after {
     width: 2rem;
     padding: 0;
   }
