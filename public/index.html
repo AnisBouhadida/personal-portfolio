@@ -789,22 +789,22 @@
                     <div class="contact-form w-100 pb-2">
                         <h3 class="display-5 text-dark">Contact</h3>
                         <p class="lh-lg text-dark">Leave me a message and i'll get back to you asap.</p>
-                        <form action="post" class="row">
+                        <form action="contact" id="contact-form" method="post" enctype="multipart/form-data" class="row">
                             <div class="mb-3"><input type="text" name="name" id="name" placeholder="Name"
                                     onfocus="this.placeholder=''" onblur="this.placeholder='Name'"
-                                    class="shadow form-control-lg form-control"></div>
+                                    class="shadow form-control-lg form-control" required></div>
 
                             <div class="mb-3"><input type="text" name="mail" id="mail" placeholder="Email"
                                     onfocus="this.placeholder=''" onblur="this.placeholder='Email'"
-                                    class="shadow form-control-lg form-control"></div>
+                                    class="shadow form-control-lg form-control" required></div>
 
                             <div class="mb-3"><input type="text" name="title" id="title" placeholder="Subject"
                                     onfocus="this.placeholder=''" onblur="this.placeholder='Subject'"
-                                    class="shadow form-control-lg form-control"></div>
+                                    class="shadow form-control-lg form-control" required></div>
 
                             <div class="mb-3"><textarea name="message" id="message" placeholder="Message"
                                     onfocus="this.placeholder=''" onblur="this.placeholder='Message'"
-                                    class="shadow form-control-lg form-control" rows="8"></textarea></div>
+                                    class="shadow form-control-lg form-control" rows="8" required></textarea></div>
                             <br>
                             <div class="mb-3"><input type="submit" value="Send"
                                     class="btn btn-primary rounded-pill shadow form-control-lg form-control">
