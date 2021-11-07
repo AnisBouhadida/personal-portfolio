@@ -792,9 +792,9 @@
                         <form action="contact" id="contact-form" method="post" enctype="multipart/form-data" class="row">
                             <div class="mb-3"><input type="text" name="name" id="name" placeholder="Name"
                                     onfocus="this.placeholder=''" onblur="this.placeholder='Name'"
-                                    class="shadow form-control-lg form-control" required></div>
+                                    class="shadow form-control-lg form-control" pattern="[A-Za-z]+\s[A-Za-z]+" required></div>
 
-                            <div class="mb-3"><input type="text" name="mail" id="mail" placeholder="Email"
+                            <div class="mb-3"><input type="email" name="mail" id="mail" placeholder="Email"
                                     onfocus="this.placeholder=''" onblur="this.placeholder='Email'"
                                     class="shadow form-control-lg form-control" required></div>
 
