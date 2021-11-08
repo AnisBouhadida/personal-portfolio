@@ -7,13 +7,11 @@ require("dotenv").config();
 // instantiate an express app
 const app = express();
 app.use('/', express.static(__dirname + '/public'))
-
-//make the contact page the the first page on the app
 app.route("/").get(function (req, res) {
   res.sendFile(process.cwd() + "/public/index.html");
 });
 
-//port will be 5000 for testing
+// setting up port
 const PORT = process.env.PORT || 5500;
 app.listen(PORT, () => {
   console.log(`Listening on port ${PORT}...`);
@@ -38,6 +36,7 @@ transporter.verify(function (error, success) {
   }
 });
 
+
 app.post("/contact", (req, res) => {
   
   let form = new multiparty.Form();
@@ -49,7 +48,7 @@ app.post("/contact", (req, res) => {
       data[property] = fields[property].toString();
     });
 
-    //2. You can configure the object however you want
+    // create mail object
     const mail = {
       from: data.name,
       to: process.env.EMAIL,
@@ -57,7 +56,7 @@ app.post("/contact", (req, res) => {
       text: `${data.name} <${data.mail}> \n${data.message}`,
     };
 
-    //3.
+    // send mail
     transporter.sendMail(mail, (err, data) => {
       if (err) {
         console.log(err);
