@@ -11438,6 +11438,42 @@ body {
   visibility: visible;
 }
 
+.projects-landing-section {
+  padding-bottom: 0;
+}
+
+.projects-section {
+  background-color: #2685e3;
+  overflow: hidden;
+}
+.projects-section .blue-wave svg {
+  position: relative;
+  display: block;
+  width: calc(160% + 1.3px);
+  height: 177px;
+}
+.projects-section .blue-wave .shape-fill {
+  fill: #124559;
+}
+.projects-section i {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.projects-footer {
+  overflow: hidden;
+  padding-top: 0;
+}
+.projects-footer .blue-wave svg {
+  position: relative;
+  display: block;
+  width: calc(160% + 1.3px);
+  height: 177px;
+}
+.projects-footer .blue-wave .shape-fill {
+  fill: #2685e3;
+}
+
 body {
   margin: 0;
   padding: 0;

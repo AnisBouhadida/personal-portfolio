@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "postinstall": "npm run copy-libs",
-    "compile:sass": "sass --watch scss:assets/css",
+    "compile:sass": "sass --watch public/scss:public/assets/css",
     "copy-libs": "cpx \"node_modules/@fortawesome/fontawesome-free/webfonts/**/*\" assets/webfonts -C"
   },
   "repository": {
