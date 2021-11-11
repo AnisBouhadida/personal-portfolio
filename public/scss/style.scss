@@ -16,6 +16,9 @@
 @use "sections/navbar";
 @use "sections/skills-section";
 
+// import pages
+@use "pages/projects";
+
 // body general styling
 body {
     margin: 0;

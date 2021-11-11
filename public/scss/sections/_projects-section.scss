@@ -1,0 +1,47 @@
+// use custom variables
+@use "../custom" as *;
+
+// Project landing section styling
+.projects-landing-section{
+    padding-bottom: 0;
+}
+
+
+// Projects section styling
+.projects-section{
+    background-color: $blue;
+    overflow: hidden;
+    .blue-wave {
+        svg {
+            position: relative;
+            display: block;
+            width: calc(160% + 1.3px);
+            height: 177px;
+        }
+
+        .shape-fill {
+            fill: $green;
+        }
+    }
+    i{
+        margin-right: 0.5rem;
+        font-size: 1.2rem;
+    }
+}
+
+.projects-footer{
+    overflow: hidden;
+    padding-top: 0;
+    .blue-wave {
+        svg {
+            position: relative;
+            display: block;
+            width: calc(160% + 1.3px);
+            height: 177px;
+        }
+
+        .shape-fill {
+            fill: $primary;
+        }
+    }
+}
