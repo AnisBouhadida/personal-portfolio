@@ -789,10 +789,12 @@
                     <div class="contact-form w-100 pb-2">
                         <h3 class="display-5 text-dark">Contact</h3>
                         <p class="lh-lg text-dark">Leave me a message and i'll get back to you asap.</p>
-                        <form action="contact" id="contact-form" method="post" enctype="multipart/form-data" class="row">
+                        <form action="contact" id="contact-form" method="post" enctype="multipart/form-data"
+                            class="row">
                             <div class="mb-3"><input type="text" name="name" id="name" placeholder="Name"
                                     onfocus="this.placeholder=''" onblur="this.placeholder='Name'"
-                                    class="shadow form-control-lg form-control" pattern="[A-Za-z]+\s[A-Za-z]+" required></div>
+                                    class="shadow form-control-lg form-control" pattern="[A-Za-z]+\s[A-Za-z]+" required>
+                            </div>
 
                             <div class="mb-3"><input type="email" name="mail" id="mail" placeholder="Email"
                                     onfocus="this.placeholder=''" onblur="this.placeholder='Email'"
@@ -821,18 +823,64 @@
         <hr>
         <div class="container">
             <div class="row row-cols-1">
-                <span class="col-6"><a href="#">Stack used for this website</a></span>
+                <div class="col-6">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#techStackModal">Stack used for this website</a>
+                    <!-- Start Modal -->
+                    <div class="modal fade" id="techStackModal" tabindex="-1" aria-labelledby="techStackModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title text-dark" id="techStackModalLabel">Stack used for this
+                                        website</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body container">
+                                    <div class="row justify-content-around g-2 g-lg-3 text-dark">
+                                        <div class="col-lg-3 col-md-4 col-sm-6 tech-grid text-center shadow">
+                                            <i class="fab fa-css3-alt"></i>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-6 tech-grid text-center shadow">
+                                            <i class="fab fa-html5"></i>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-6 tech-grid text-center shadow">
+                                            <i class="fab fa-js-square"></i>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-6 tech-grid text-center shadow">
+                                            <i class="fab fa-sass"></i>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-6 tech-grid text-center shadow">
+                                            <i class="fab fa-bootstrap"></i>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-6 tech-grid text-center shadow">
+                                            <i class="fab fa-node"></i>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-6 tech-grid text-center shadow">
+                                            <i class="fab fa-npm"></i>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-6 tech-grid text-center shadow">
+                                            <i class="fab fa-git"></i>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-sm-6 tech-grid text-center shadow">
+                                            <i class="fab fa-github"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Modal -->
+                </div>
                 <p class="col-6 text-end">Anis Bouhadida&copy;2021</p>
-                <p>
+                <p class="col-12 text-center">
                     <a href="http://jigsaw.w3.org/css-validator/check/referer">
                         <img style="border:0;width:88px;height:31px"
-                            src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
-                            alt="CSS Valide !" />
-                        </a>
-                    </p>
+                            src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="CSS Valide !" />
+                    </a>
+                </p>
             </div>
         </div>
-
     </footer>
     <!-- End Footer section -->
     <!-- Start call js scripts -->
@@ -840,8 +888,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
     <script src="main.js"></script>
     <!-- End call js scripts -->
