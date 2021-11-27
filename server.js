@@ -22,8 +22,8 @@ const transporter = nodemailer.createTransport({
   host: "smtp-mail.outlook.com",
   port: 587,
   auth: {
-    user: process.env.EMAIL,
-    pass: process.env.EMAIL_PASS,
+    user: process.env.SENDER_EMAIL,
+    pass: process.env.SENDER_EMAIL_PASS,
   },
 });
 
@@ -50,10 +50,14 @@ app.post("/contact", (req, res) => {
 
     // create mail object
     const mail = {
-      from: data.name,
-      to: process.env.EMAIL,
-      subject: data.title,
-      text: `${data.name} <${data.mail}> \n${data.message}`,
+      from:{
+        name: "Contact Form",
+        address: process.env.SENDER_EMAIL
+      },
+      to: process.env.RECEPIENT_EMAIL,
+      subject: "new contact message from your website🎉" ,
+      text: `${data.name} sent you a message 📥 \n${data.title} : \n${data.message}`,
+      replyTo:data.mail,
     };
 
     // send mail
