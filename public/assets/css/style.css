@@ -11314,12 +11314,62 @@ body {
 .footer {
   padding-top: 2rem;
 }
-.footer span a {
+.footer div a {
   text-decoration: none;
   color: #fffbfc;
 }
-.footer span a:hover {
+.footer div a:hover {
   color: #ef798a;
+}
+.footer .modal .modal-dialog .modal-body .tech-grid {
+  border-radius: 4px;
+  filter: blur(2px);
+}
+.footer .modal .modal-dialog .modal-body .tech-grid:hover {
+  filter: none;
+  transition: 0.2s ease-in-out;
+}
+.footer .modal .modal-dialog .modal-body .tech-grid:hover p {
+  display: block;
+  font-size: 1rem;
+  text-align: center;
+  transition: 0.1s ease-in-out;
+}
+.footer .modal .modal-dialog .modal-body .tech-grid p {
+  display: none;
+}
+.footer .modal .modal-dialog .modal-body .tech-grid i {
+  font-size: 4rem;
+}
+.footer .modal .modal-dialog .modal-body .tech-grid .fa-html5 {
+  color: #f06529;
+}
+.footer .modal .modal-dialog .modal-body .tech-grid .fa-css3-alt {
+  color: #2965f1;
+}
+.footer .modal .modal-dialog .modal-body .tech-grid .fa-sass {
+  color: #cc6699;
+}
+.footer .modal .modal-dialog .modal-body .tech-grid .fa-bootstrap {
+  color: #563d7c;
+}
+.footer .modal .modal-dialog .modal-body .tech-grid .fa-font-awesome {
+  color: #438dd8;
+}
+.footer .modal .modal-dialog .modal-body .tech-grid .fa-js-square {
+  color: #f0db4f;
+}
+.footer .modal .modal-dialog .modal-body .tech-grid .fa-node {
+  color: #3c873a;
+}
+.footer .modal .modal-dialog .modal-body .tech-grid .fa-npm {
+  color: #cb3837;
+}
+.footer .modal .modal-dialog .modal-body .tech-grid .fa-git {
+  color: #f34f29;
+}
+.footer .modal .modal-dialog .modal-body .tech-grid .fa-github {
+  color: #189cac;
 }
 
 .landing-section {

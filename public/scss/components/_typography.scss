@@ -78,7 +78,7 @@ body {
         padding: 1vh 2vh;
         margin: 0;
 
-        @include media-breakpoint-down(sm){
+        @include media-breakpoint-down(sm) {
             font-size: 1rem;
             padding: 0.5vh 1vh;
         }
@@ -90,7 +90,7 @@ body {
             color: $black;
             padding: 1vh;
 
-            @include media-breakpoint-down(sm){
+            @include media-breakpoint-down(sm) {
                 padding: 0.5vh;
             }
 
@@ -98,10 +98,10 @@ body {
                 color: $white;
             }
 
-            p{
+            p {
                 font-size: 1rem;
 
-                @include media-breakpoint-down(sm){
+                @include media-breakpoint-down(sm) {
                     font-size: 0.8rem;
                 }
             }
@@ -112,3 +112,5 @@ body {
 // curriculum section typography
 
 // contactme section typography
+
+// footer section typography

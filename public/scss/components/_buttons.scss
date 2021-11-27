@@ -1,24 +1,24 @@
-@use '../custom' as *;
+@use "../custom" as *;
 
-.btn-circle{
+.btn-circle {
     margin-top: 2rem;
     width: auto;
     position: relative;
 
-    i{
+    i {
         font-size: 4rem;
         color: $white;
     }
 }
 
-.btn-rounded{
+.btn-rounded {
     padding: 1rem;
     background-color: $green-dark;
     border-radius: 6px;
     text-decoration: none;
     color: $white;
 
-    &:hover{
+    &:hover {
         color: $red;
     }
 }
