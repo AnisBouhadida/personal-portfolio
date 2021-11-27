@@ -2,36 +2,51 @@
 
 .footer {
     padding-top: 2rem;
-    div{
+    div {
         a {
             text-decoration: none;
             color: $white;
-    
+
             &:hover {
                 color: $red;
             }
         }
     }
 
-    .modal{
-
-        .modal-dialog{
-
-            .modal-body{
-
-                .tech-grid{
-                    box-sizing: border-box;
-                    width: 5rem;
-                    margin: 0.1rem;
-                    padding: 0;
+    .modal {
+        .modal-dialog {
+            .modal-body {
+                .tech-grid {
                     border-radius: 4px;
-                    i{
+                    filter: blur(2px);
+
+                    &:hover {
+                        filter: none;
+                        transition: 0.2s ease-in-out;
+
+                        p {
+                            display: block;
+                            font-size: 1rem;
+                            text-align: center;
+                            transition: 0.1s ease-in-out;
+                        }
+                    }
+
+                    p {
+                        display: none;
+                    }
+
+                    i {
                         font-size: 4rem;
+                    }
+
+                    @each $icon, $color in $icons {
+                        .fa-#{$icon} {
+                            color: $color;
+                        }
                     }
                 }
             }
         }
     }
-
-
 }

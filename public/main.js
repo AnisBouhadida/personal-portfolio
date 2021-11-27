@@ -40,3 +40,12 @@ const formEvent = form.addEventListener("submit", (event) => {
 
   sendMail(mail);
 });
+
+$(".tech-grid").hover(
+  function () {
+    $(this).addClass("shadow");
+  },
+  function () {
+    $(this).removeClass("shadow");
+  }
+);

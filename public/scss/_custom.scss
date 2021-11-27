@@ -7,6 +7,20 @@ $green-dark: #185c77;
 $teal: #066968;
 $cyan: #00cecb;
 
+// mapping icon:color used to style icons in footer
+$icons: (
+    html5: #f06529,
+    css3-alt: #2965f1,
+    sass: #cc6699,
+    bootstrap: #563d7c,
+    font-awesome: #438dd8,
+    js-square: #f0db4f,
+    node: #3c873a,
+    npm: #cb3837,
+    git: #f34f29,
+    github: #189cac,
+);
+
 // white and gray colors
 $white: #fffbfc;
 $gray-100: #f8f9fa;
