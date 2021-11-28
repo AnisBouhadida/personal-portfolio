@@ -33,13 +33,16 @@ const sendMail = (mail) => {
 
 // Adding the event listener
 const form = document.getElementById("contact-form");
-const formEvent = form.addEventListener("submit", (event) => {
-  event.preventDefault();
+if (form != null) {
+  const formEvent = form.addEventListener("submit", (event) => {
+    event.preventDefault();
+  
+    let mail = new FormData(form);
+  
+    sendMail(mail);
+  });
+}
 
-  let mail = new FormData(form);
-
-  sendMail(mail);
-});
 
 $(".tech-grid").hover(
   function () {
